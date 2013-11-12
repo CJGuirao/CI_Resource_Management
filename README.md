@@ -93,7 +93,19 @@ Uses metadata to write some headers and then file contents
 *Delete File*
 `$this->res_storage->delete($uuid)`
 
+Everything will throw an Exception if something goes wrong.
+So if you want to be safe and not have halfloaded pages... try using 
+try-catch:
 
+```
+	 try{
+                return $this->res_storage->readfile($uuid);
+            }catch (Exception $e) {
+                error_log ('/* Captured: ',  $e->getMessage(), "*/ \n");
+                http_response_code(404);
+                die("File not found.");
+            }
+```
 
 ************
 Creating your own FileHandle with your own encryption
