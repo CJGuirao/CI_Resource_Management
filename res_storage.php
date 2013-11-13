@@ -86,11 +86,11 @@ class Res_Storage {
 	/**
      * Class to use to handle phisically files. Default RS_File_Encrypted
 	 * use RS_File for non encrypted handling. (or write your own!)Where files will be stored.
-     * FileClass
+     * file_handler
      * @access public
      * @var string
      */
-	public $FileClass    = "RS_File_Encrypted"; 			
+	public $file_handler    = "RS_File_Encrypted"; 			
 	
 	/**
      * Table name where all metadata is stored. 
@@ -214,12 +214,12 @@ class Res_Storage {
 	 * @return object
 	 */
 	private function newFileHandler(){
-		if (in_array($this->FileClass, array('RS_File','RS_File_Encrypted'))){
-			$class = __NAMESPACE__.'\FileManagers\\'.$this->FileClass;
+		if (in_array($this->file_handler, array('RS_File','RS_File_Encrypted'))){
+			$class = __NAMESPACE__.'\FileManagers\\'.$this->file_handler;
 			return new $class($this->storage_dir, $this->clearkey);	
 		}
 		else{
-			return new $this->FileClass($this->storage_dir, $this->clearkey);
+			return new $this->file_handler($this->storage_dir, $this->clearkey);
 		}
 	}
 
