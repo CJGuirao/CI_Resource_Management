@@ -1,8 +1,23 @@
 <?php
+/**
+ * Base File Management Class
+ *
+ * @package		CJCIPackages
+ * @subpackage	StorageLibrary
+ * @category	CodeIgniter Library
+ * @author		Carlos Jimenez Guirao
+ * @link		http://WillWriteThisSoon.todo
+ * 
+ */
+
+namespace CJCIPackages\Res_Storage\FileManagers;
+use Exception;
+
 if (!defined('BASEPATH'))
     exit('No direct script access allowed');
 
 /**
+ * RS_File
  * Base File Management Class
  *
  * @package		CJCIPackages
@@ -88,7 +103,7 @@ class RS_File {
 	 * Initializes the object with given metadata to be ready to read data
 	 * 		if it's able to reach the file returns true, else returns false.
 	 * 
-	 * @param	array
+	 * @param	$metadata array
 	 * @return	true|false 	
 	 *
 	 */

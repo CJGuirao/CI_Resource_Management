@@ -1,16 +1,26 @@
 <?php
+/**
+ * Res_Storage
+ * 
+ * Library interfaces that handles metadata and uses a FileHandler to 
+ * Physically handle files.
+ */
+
+namespace CJCIPackages\Res_Storage ;
+use Exception;
+
 if (!defined('BASEPATH'))
     exit('No direct script access allowed');
 
-require_once("FileManagers/rs_file.php");
-require_once("FileManagers/rs_file_encrypted.php");
+require_once("FileManagers/RS_File.php");
+require_once("FileManagers/RS_File_Encrypted.php");
 
 /**
- * CJCIPackajes
+ * CJCIPackages
  *
  * CodeIgniter Resource storage and management class.
  * It store files, with their metadata.
- * Allows encripted storage.
+ * Allows encrypted storage.
  * 
  * Config:
  * 
@@ -19,6 +29,10 @@ require_once("FileManagers/rs_file_encrypted.php");
  * `$config['clearkey'] = "YourSecretKey" ;`  
  * 
  * `$config['storage_dir'] = "/Path/To/Your/Filesystem/";` 
+ *
+ * //Optional if you want to change default file handler
+ *
+ * `$config['file_handler'] = "My_File_Handler_Class";` 
  *   
  * 
  * Sample usage:
@@ -42,7 +56,7 @@ require_once("FileManagers/rs_file_encrypted.php");
  * `$this->res_storage->delete($uuid)`
  * 
  * @package		CJCIPackages
- * @subpackage	StorageLibrary
+ * @subpackage	Res_Storage
  * @author		Carlos Jimenez Guirao
  * @copyright	Copyright (c) 2013, Carlos Jimenez Guirao.
  * @license		GPL V3
@@ -50,7 +64,6 @@ require_once("FileManagers/rs_file_encrypted.php");
  * @since		Version 1.0
  * @filesource
  */
-
 class Res_Storage {
 	
 	/**
@@ -72,7 +85,7 @@ class Res_Storage {
 
 	/**
      * Class to use to handle phisically files. Default RS_File_Encrypted
-	 * use RS_File for non encripted handling. (or write your own!)Where files will be stored.
+	 * use RS_File for non encrypted handling. (or write your own!)Where files will be stored.
      * FileClass
      * @access public
      * @var string
@@ -99,7 +112,7 @@ class Res_Storage {
 	 * __construct
  	 * Binds CI object and checks/creates database needed to store metadata
  	 * 
-	 * @param $config array Config variables from CI config dir or manually passed that contains clearkey and storage_dir keys.
+	 * @param $args array Config variables from CI config dir or manually passed that contains clearkey and storage_dir keys.
 	 * @return void
 	 */
 	public function __construct($args = array()){
@@ -201,10 +214,12 @@ class Res_Storage {
 	 * @return object
 	 */
 	private function newFileHandler(){
-		if ($this->FileClass == 'RS_File_Encrypted'){
+		if (in_array($this->FileClass, array('RS_File','RS_File_Encrypted'))){
+			$class = __NAMESPACE__.'\FileManagers\\'.$this->FileClass;
+			return new $class($this->storage_dir, $this->clearkey);	
+		}
+		else{
 			return new $this->FileClass($this->storage_dir, $this->clearkey);
-		} else {
-			return new $this->FileClass($this->storage_dir);
 		}
 	}
 

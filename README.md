@@ -121,6 +121,7 @@ Add to your config/res_storage.php:
 Or Extend Res_Storage and override the following to use your FileHandler:
 
 ```
+use CJCIPackages\Res_Storage\Res_Storage;
 class My_Storage extends Res_Storage {
 	/**
      * Class to use to handle phisically files. Default RS_File_Encrypted

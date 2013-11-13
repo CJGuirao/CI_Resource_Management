@@ -92,6 +92,7 @@
                             API Documentation <b class="caret"></b>
                         </a>
                         <ul class="dropdown-menu">
+                                                        <li><a href="../namespaces/CJCIPackages.html">\CJCIPackages</a></li>
                                                     </ul>
                     </li>
                     <li class="dropdown" id="charts-menu">
@@ -138,18 +139,69 @@
                                 <div class="accordion" style="margin-bottom: 0">
         <div class="accordion-group">
             <div class="accordion-heading">
-                                    <a class="accordion-toggle " data-toggle="collapse" data-target="#namespace-522871366"></a>
+                                    <a class="accordion-toggle " data-toggle="collapse" data-target="#namespace-659235756"></a>
                                 <a href="../namespaces/default.html" style="margin-left: 30px; padding-left: 0">\</a>
             </div>
-            <div id="namespace-522871366" class="accordion-body collapse in">
+            <div id="namespace-659235756" class="accordion-body collapse in">
+                <div class="accordion-inner">
+
+                                                    <div class="accordion" style="margin-bottom: 0">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-386650962"></a>
+                                <a href="../namespaces/CJCIPackages.html" style="margin-left: 30px; padding-left: 0">CJCIPackages</a>
+            </div>
+            <div id="namespace-386650962" class="accordion-body collapse ">
+                <div class="accordion-inner">
+
+                                                    <div class="accordion" style="margin-bottom: 0">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-2034536721"></a>
+                                <a href="../namespaces/CJCIPackages.Res_Storage.html" style="margin-left: 30px; padding-left: 0">Res_Storage</a>
+            </div>
+            <div id="namespace-2034536721" class="accordion-body collapse ">
+                <div class="accordion-inner">
+
+                                                    <div class="accordion" style="margin-bottom: 0">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-824898192"></a>
+                                <a href="../namespaces/CJCIPackages.Res_Storage.FileManagers.html" style="margin-left: 30px; padding-left: 0">FileManagers</a>
+            </div>
+            <div id="namespace-824898192" class="accordion-body collapse ">
                 <div class="accordion-inner">
 
                     
                     <ul>
-                                                                                                    <li class="class"><a href="../classes/Res_Storage.html">Res_Storage</a></li>
-                                                    <li class="class"><a href="../classes/RS_File.html">RS_File</a></li>
-                                                    <li class="class"><a href="../classes/RS_File_Encrypted.html">RS_File_Encrypted</a></li>
+                                                                                                    <li class="class"><a href="../classes/CJCIPackages.Res_Storage.FileManagers.RS_File.html">RS_File</a></li>
+                                                    <li class="class"><a href="../classes/CJCIPackages.Res_Storage.FileManagers.RS_File_Encrypted.html">RS_File_Encrypted</a></li>
                                             </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                    
+                    <ul>
+                                                                                                    <li class="class"><a href="../classes/CJCIPackages.Res_Storage.Res_Storage.html">Res_Storage</a></li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                    
+                    <ul>
+                                                                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+                    
+                    <ul>
+                                                                                            </ul>
                 </div>
             </div>
         </div>
@@ -162,43 +214,14 @@
             <div class="row-fluid">
                 <div class="span8 content class">
                     <nav>
-                                                <a href="../namespaces/default.html">\</a> <i class="icon-level-up"></i>
+                                                <a href="../namespaces/CJCIPackages.Res_Storage.FileManagers.html">\CJCIPackages\Res_Storage\FileManagers</a> <i class="icon-level-up"></i>
                                             </nav>
                     <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal"><i class="icon-code"></i></a>
 
-                    <h1><small>\</small>Res_Storage</h1>
-                    <p><em>CJCIPackajes</em></p>
-                    <p>CodeIgniter Resource storage and management class.
-It store files, with their metadata.
-Allows encripted storage.</p>
-
-<p>Config:</p>
-
-<p>As a parameter or creating a res_storage.php file in your CodeIgniter's config dir:</p>
-
-<p><code>$config['clearkey'] = "YourSecretKey" ;</code></p>
-
-<p><code>$config['storage_dir'] = "/Path/To/Your/Filesystem/";</code></p>
-
-<p>Sample usage:</p>
-
-<p><em>Instantiate</em>
-<code>$this-&gt;load-&gt;library('res_storage');</code></p>
-
-<p><em>Store a file</em>
-<code>$uuid = $this-&gt;res_storage-&gt;store_file('/Path/to/File.txt');</code></p>
-
-<p><em>Read Metadata</em>
-<code>var_dump($this-&gt;res_storage-&gt;metadata($uuid));</code></p>
-
-<p><em>Get File contents</em>
-<code>$contents = $this-&gt;res_storage-&gt;file_get_contents($uuid);</code></p>
-
-<p><em>Read contents tobrowser using metadata</em>
-<code>$contents = $this-&gt;res_storage-&gt;readfile($uuid);</code></p>
-
-<p><em>Delete File</em>
-<code>$this-&gt;res_storage-&gt;delete($uuid)</code></p>
+                    <h1><small>\CJCIPackages\Res_Storage\FileManagers</small>RS_File</h1>
+                    <p><em>RS_File
+Base File Management Class</em></p>
+                    
 
 
                     <section id="summary">
@@ -216,18 +239,23 @@ Allows encripted storage.</p>
                         </section>
                         <section class="row-fluid public">
                             <section class="span4">
-                                                                    <a href="../classes/Res_Storage.html#method___construct" class="">__construct()</a><br />
-                                                                    <a href="../classes/Res_Storage.html#method_checkDatabase" class="">checkDatabase()</a><br />
-                                                                    <a href="../classes/Res_Storage.html#method_create_path" class="">create_path()</a><br />
-                                                                    <a href="../classes/Res_Storage.html#method_store_file" class="">store_file()</a><br />
-                                                                    <a href="../classes/Res_Storage.html#method_readfile" class="">readfile()</a><br />
-                                                                    <a href="../classes/Res_Storage.html#method_file_get_contents" class="">file_get_contents()</a><br />
-                                                                    <a href="../classes/Res_Storage.html#method_delete" class="">delete()</a><br />
-                                                                    <a href="../classes/Res_Storage.html#method_metadata" class="">metadata()</a><br />
+                                                                    <a href="../classes/CJCIPackages.Res_Storage.FileManagers.RS_File.html#method___construct" class="">__construct()</a><br />
+                                                                    <a href="../classes/CJCIPackages.Res_Storage.FileManagers.RS_File.html#method_store" class="">store()</a><br />
+                                                                    <a href="../classes/CJCIPackages.Res_Storage.FileManagers.RS_File.html#method_initialize" class="">initialize()</a><br />
+                                                                    <a href="../classes/CJCIPackages.Res_Storage.FileManagers.RS_File.html#method_file_get_contents" class="">file_get_contents()</a><br />
+                                                                    <a href="../classes/CJCIPackages.Res_Storage.FileManagers.RS_File.html#method_readfile" class="">readfile()</a><br />
+                                                                    <a href="../classes/CJCIPackages.Res_Storage.FileManagers.RS_File.html#method_delete" class="">delete()</a><br />
+                                                                    <a href="../classes/CJCIPackages.Res_Storage.FileManagers.RS_File.html#method_gen_path" class="">gen_path()</a><br />
                                                             </section>
                             <section class="span4">
-                                                                    <a href="../classes/Res_Storage.html#property_storage_dir" class="">$storage_dir</a><br />
-                                                                    <a href="../classes/Res_Storage.html#property_FileClass" class="">$FileClass</a><br />
+                                                                    <a href="../classes/CJCIPackages.Res_Storage.FileManagers.RS_File.html#property_filename" class="">$filename</a><br />
+                                                                    <a href="../classes/CJCIPackages.Res_Storage.FileManagers.RS_File.html#property_mimetype" class="">$mimetype</a><br />
+                                                                    <a href="../classes/CJCIPackages.Res_Storage.FileManagers.RS_File.html#property_hash" class="">$hash</a><br />
+                                                                    <a href="../classes/CJCIPackages.Res_Storage.FileManagers.RS_File.html#property_uuid" class="">$uuid</a><br />
+                                                                    <a href="../classes/CJCIPackages.Res_Storage.FileManagers.RS_File.html#property_path" class="">$path</a><br />
+                                                                    <a href="../classes/CJCIPackages.Res_Storage.FileManagers.RS_File.html#property_accessed" class="">$accessed</a><br />
+                                                                    <a href="../classes/CJCIPackages.Res_Storage.FileManagers.RS_File.html#property_stored" class="">$stored</a><br />
+                                                                    <a href="../classes/CJCIPackages.Res_Storage.FileManagers.RS_File.html#property_lastaccess" class="">$lastaccess</a><br />
                                                             </section>
                             <section class="span4">
                                                                     <em>No constants found</em>
@@ -235,11 +263,11 @@ Allows encripted storage.</p>
                         </section>
                         <section class="row-fluid protected">
                             <section class="span4">
-                                                                    <em>No protected methods found</em>
+                                                                    <a href="../classes/CJCIPackages.Res_Storage.FileManagers.RS_File.html#method_copy" class="">copy()</a><br />
+                                                                    <a href="../classes/CJCIPackages.Res_Storage.FileManagers.RS_File.html#method_get_full_path" class="">get_full_path()</a><br />
                                                             </section>
                             <section class="span4">
-                                                                    <a href="../classes/Res_Storage.html#property_clearkey" class="">$clearkey</a><br />
-                                                                    <a href="../classes/Res_Storage.html#property_table" class="">$table</a><br />
+                                                                    <em>No protected properties found</em>
                                                             </section>
                             <section class="span4">
                                 <em>N/A</em>
@@ -247,11 +275,11 @@ Allows encripted storage.</p>
                         </section>
                         <section class="row-fluid private">
                             <section class="span4">
-                                                                    <a href="../classes/Res_Storage.html#method_newFileHandler" class="">newFileHandler()</a><br />
-                                                                    <a href="../classes/Res_Storage.html#method_getFileHandler" class="">getFileHandler()</a><br />
+                                                                    <em>No private methods found</em>
                                                             </section>
                             <section class="span4">
-                                                                    <a href="../classes/Res_Storage.html#property_CI" class="">$CI</a><br />
+                                                                    <a href="../classes/CJCIPackages.Res_Storage.FileManagers.RS_File.html#property__orig_path" class="">$_orig_path</a><br />
+                                                                    <a href="../classes/CJCIPackages.Res_Storage.FileManagers.RS_File.html#property_storage_dir" class="">$storage_dir</a><br />
                                                             </section>
                             <section class="span4">
                                 <em>N/A</em>
@@ -264,64 +292,37 @@ Allows encripted storage.</p>
                     
                     <dl>
                         <dt>File</dt>
-                            <dd><a href="../files/res_storage.php.html"><div class="path-wrapper">res_storage.php</div></a></dd>
+                            <dd><a href="../files/FileManagers.RS_File.php.html"><div class="path-wrapper">FileManagers/RS_File.php</div></a></dd>
                                                 <dt>Package</dt>
                             <dd><div class="namespace-wrapper">\CJCIPackages\StorageLibrary\StorageLibrary</div></dd>
                                                 <dt>Class hierarchy</dt>
                             <dd class="hierarchy">
-                                                                                                                                                                    <div class="namespace-wrapper">\Res_Storage</div>
+                                                                                                                                                                    <div class="namespace-wrapper">\CJCIPackages\Res_Storage\FileManagers\RS_File</div>
                             </dd>
 
                         
                         
                                                                             <dt>See also</dt>
-                                                                                    <dd><a href="http://www.CJPackages.net"><div class="namespace-wrapper">http://www.CJPackages.net</div></a></dd>
+                                                                                    <dd><a href="http://WillWriteThisSoon.todo"><div class="namespace-wrapper">http://WillWriteThisSoon.todo</div></a></dd>
                                                     
                                                                         </dl>
                     <h2>Tags</h2>
                     <table class="table table-condensed">
                                             <tr>
                             <th>
+                                category
+                            </th>
+                            <td>
+                                                                    <p>CodeIgniter Library</p>
+
+                                                            </td>
+                        </tr>
+                                            <tr>
+                            <th>
                                 author
                             </th>
                             <td>
                                                                     <p>Carlos Jimenez Guirao</p>
-
-                                                            </td>
-                        </tr>
-                                            <tr>
-                            <th>
-                                copyright
-                            </th>
-                            <td>
-                                                                    <p>Copyright (c) 2013, Carlos Jimenez Guirao.</p>
-
-                                                            </td>
-                        </tr>
-                                            <tr>
-                            <th>
-                                license
-                            </th>
-                            <td>
-                                                                    <p>GPL V3</p>
-
-                                                            </td>
-                        </tr>
-                                            <tr>
-                            <th>
-                                since
-                            </th>
-                            <td>
-                                                                    <p>Version 1.0</p>
-
-                                                            </td>
-                        </tr>
-                                            <tr>
-                            <th>
-                                filesource
-                            </th>
-                            <td>
-                                                                    
 
                                                             </td>
                         </tr>
@@ -340,119 +341,242 @@ Allows encripted storage.</p>
 
                                     <div class="row-fluid">
         <div class="span8 content class">
-            <a id="property_storage_dir" name="property_storage_dir" class="anchor"></a>
+            <a id="property_filename" name="property_filename" class="anchor"></a>
             <article class="property">
-                <h3 class="public ">$storage_dir</h3>
-                <pre class="signature">$storage_dir : string</pre>
-                <p><em>Where files will be stored.</em></p>
-                <p>storage_dir</p>
-
-
-                                <h4>Type</h4>
-                string
-                                            </article>
-        </div>
-        <aside class="span4 detailsbar">
-            <h1><i class="icon-arrow-down"></i></h1>
-                        <dl>
-                                                            </dl>
-            <h2>Tags</h2>
-            <table class="table table-condensed">
-                                    <tr><td colspan="2"><em>None found</em></td></tr>
-                            </table>
-        </aside>
-    </div>
-
-                                    <div class="row-fluid">
-        <div class="span8 content class">
-            <a id="property_FileClass" name="property_FileClass" class="anchor"></a>
-            <article class="property">
-                <h3 class="public ">$FileClass</h3>
-                <pre class="signature">$FileClass : string</pre>
-                <p><em>Class to use to handle phisically files. Default RS_File_Encrypted
-use RS_File for non encripted handling. (or write your own!)Where files will be stored.</em></p>
-                <p>FileClass</p>
-
-
-                                <h4>Type</h4>
-                string
-                                            </article>
-        </div>
-        <aside class="span4 detailsbar">
-            <h1><i class="icon-arrow-down"></i></h1>
-                        <dl>
-                                                            </dl>
-            <h2>Tags</h2>
-            <table class="table table-condensed">
-                                    <tr><td colspan="2"><em>None found</em></td></tr>
-                            </table>
-        </aside>
-    </div>
-
-                                                    <div class="row-fluid">
-        <div class="span8 content class">
-            <a id="property_clearkey" name="property_clearkey" class="anchor"></a>
-            <article class="property">
-                <h3 class="protected ">$clearkey</h3>
-                <pre class="signature">$clearkey : string</pre>
-                <p><em>If you use File encryption you MUST change this.</em></p>
-                <p>clearkey</p>
-
-
-                                <h4>Type</h4>
-                string
-                                            </article>
-        </div>
-        <aside class="span4 detailsbar">
-            <h1><i class="icon-arrow-down"></i></h1>
-                        <dl>
-                                                            </dl>
-            <h2>Tags</h2>
-            <table class="table table-condensed">
-                                    <tr><td colspan="2"><em>None found</em></td></tr>
-                            </table>
-        </aside>
-    </div>
-
-                                    <div class="row-fluid">
-        <div class="span8 content class">
-            <a id="property_table" name="property_table" class="anchor"></a>
-            <article class="property">
-                <h3 class="protected ">$table</h3>
-                <pre class="signature">$table : string</pre>
-                <p><em>Table name where all metadata is stored.</em></p>
-                <p>table</p>
-
-
-                                <h4>Type</h4>
-                string
-                                            </article>
-        </div>
-        <aside class="span4 detailsbar">
-            <h1><i class="icon-arrow-down"></i></h1>
-                        <dl>
-                                                            </dl>
-            <h2>Tags</h2>
-            <table class="table table-condensed">
-                                    <tr><td colspan="2"><em>None found</em></td></tr>
-                            </table>
-        </aside>
-    </div>
-
-                                                    <div class="row-fluid">
-        <div class="span8 content class">
-            <a id="property_CI" name="property_CI" class="anchor"></a>
-            <article class="property">
-                <h3 class="private ">$CI</h3>
-                <pre class="signature">$CI : object</pre>
-                <p><em>Where we will bind CI singleton to use CI database library
-CI</em></p>
+                <h3 class="public ">$filename</h3>
+                <pre class="signature">$filename : string</pre>
+                <p><em>File Metadata</em></p>
                 
 
 
                                 <h4>Type</h4>
-                object
-                                            </article>
+                string
+                &mdash; Filename                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="property_mimetype" name="property_mimetype" class="anchor"></a>
+            <article class="property">
+                <h3 class="public ">$mimetype</h3>
+                <pre class="signature">$mimetype : string</pre>
+                <p><em>File Metadata</em></p>
+                
+
+
+                                <h4>Type</h4>
+                string
+                &mdash; Filename                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="property_hash" name="property_hash" class="anchor"></a>
+            <article class="property">
+                <h3 class="public ">$hash</h3>
+                <pre class="signature">$hash : string</pre>
+                <p><em>File Metadata</em></p>
+                
+
+
+                                <h4>Type</h4>
+                string
+                &mdash; Filename                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="property_uuid" name="property_uuid" class="anchor"></a>
+            <article class="property">
+                <h3 class="public ">$uuid</h3>
+                <pre class="signature">$uuid : string</pre>
+                <p><em>File Metadata</em></p>
+                
+
+
+                                <h4>Type</h4>
+                string
+                &mdash; Filename                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="property_path" name="property_path" class="anchor"></a>
+            <article class="property">
+                <h3 class="public ">$path</h3>
+                <pre class="signature">$path : string</pre>
+                <p><em>File Metadata</em></p>
+                
+
+
+                                <h4>Type</h4>
+                string
+                &mdash; Filename                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="property_accessed" name="property_accessed" class="anchor"></a>
+            <article class="property">
+                <h3 class="public ">$accessed</h3>
+                <pre class="signature">$accessed : string</pre>
+                <p><em>File Metadata</em></p>
+                
+
+
+                                <h4>Type</h4>
+                string
+                &mdash; Filename                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="property_stored" name="property_stored" class="anchor"></a>
+            <article class="property">
+                <h3 class="public ">$stored</h3>
+                <pre class="signature">$stored : string</pre>
+                <p><em>File Metadata</em></p>
+                
+
+
+                                <h4>Type</h4>
+                string
+                &mdash; Filename                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="property_lastaccess" name="property_lastaccess" class="anchor"></a>
+            <article class="property">
+                <h3 class="public ">$lastaccess</h3>
+                <pre class="signature">$lastaccess : string</pre>
+                <p><em>File Metadata</em></p>
+                
+
+
+                                <h4>Type</h4>
+                string
+                &mdash; Filename                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="property__orig_path" name="property__orig_path" class="anchor"></a>
+            <article class="property">
+                <h3 class="private ">$_orig_path</h3>
+                <pre class="signature">$_orig_path : string</pre>
+                <p><em></em></p>
+                
+
+
+                                <h4>Type</h4>
+                string
+                &mdash; Original path used before storage.                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="property_storage_dir" name="property_storage_dir" class="anchor"></a>
+            <article class="property">
+                <h3 class="private ">$storage_dir</h3>
+                <pre class="signature">$storage_dir : string</pre>
+                <p><em></em></p>
+                
+
+
+                                <h4>Type</h4>
+                string
+                &mdash; Original path used before storage.                            </article>
         </div>
         <aside class="span4 detailsbar">
             <h1><i class="icon-arrow-down"></i></h1>
@@ -478,46 +602,9 @@ CI</em></p>
             <article class="method">
                 <h3 class="public ">__construct()</h3>
                 <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
-                <pre class="signature" style="margin-right: 54px;">__construct( <span class="argument">$args</span>) : void</pre>
-                <p><em>__construct
-Binds CI object and checks/creates database needed to store metadata</em></p>
-                
-
-
-                                    <h4>Parameters</h4>
-                    <table class="table table-condensed table-hover">
-                                                    <tr>
-                                <td></td>
-                                <td>$args</td>
-                                <td>
-</td>
-                            </tr>
-                                            </table>
-                
-                
-                            </article>
-        </div>
-        <aside class="span4 detailsbar">
-            <h1><i class="icon-arrow-down"></i></h1>
-                                                            <dl>
-                                                                            </dl>
-            <h2>Tags</h2>
-            <table class="table table-condensed">
-                                    <tr><td colspan="2"><em>None found</em></td></tr>
-                            </table>
-        </aside>
-    </div>
-
-                                    <div class="row-fluid">
-        <div class="span8 content class">
-            <a id="method_checkDatabase" name="method_checkDatabase" class="anchor"></a>
-            <article class="method">
-                <h3 class="public ">checkDatabase()</h3>
-                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
-                <pre class="signature" style="margin-right: 54px;">checkDatabase() : void</pre>
-                <p><em>checkDatabase
-Checks and creates Database if not exists</em></p>
-                
+                <pre class="signature" style="margin-right: 54px;">__construct() : void</pre>
+                <p><em>__construct</em></p>
+                <p>Sets BaseDir where all files will land</p>
 
 
                 
@@ -537,20 +624,20 @@ Checks and creates Database if not exists</em></p>
 
                                     <div class="row-fluid">
         <div class="span8 content class">
-            <a id="method_create_path" name="method_create_path" class="anchor"></a>
+            <a id="method_store" name="method_store" class="anchor"></a>
             <article class="method">
-                <h3 class="public ">create_path()</h3>
+                <h3 class="public ">store()</h3>
                 <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
-                <pre class="signature" style="margin-right: 54px;">create_path(string <span class="argument">$path</span>) : true|false</pre>
-                <p><em>create_path</em></p>
-                <p>Checks and creates path</p>
+                <pre class="signature" style="margin-right: 54px;">store(string <span class="argument">$origin</span>) : true|false</pre>
+                <p><em>store</em></p>
+                <p>Initializes the object with given source file and stores a copy of it.</p>
 
 
                                     <h4>Parameters</h4>
                     <table class="table table-condensed table-hover">
                                                     <tr>
                                 <td>string</td>
-                                <td>$path</td>
+                                <td>$origin</td>
                                 <td>
 </td>
                             </tr>
@@ -574,28 +661,57 @@ Checks and creates Database if not exists</em></p>
 
                                     <div class="row-fluid">
         <div class="span8 content class">
-            <a id="method_store_file" name="method_store_file" class="anchor"></a>
+            <a id="method_initialize" name="method_initialize" class="anchor"></a>
             <article class="method">
-                <h3 class="public ">store_file()</h3>
+                <h3 class="public ">initialize()</h3>
                 <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
-                <pre class="signature" style="margin-right: 54px;">store_file(string <span class="argument">$path</span>) : string|false</pre>
-                <p><em>store_file</em></p>
-                <p>Store a copy of an existing document</p>
+                <pre class="signature" style="margin-right: 54px;">initialize(mixed <span class="argument">$metadata</span>) : true|false</pre>
+                <p><em>initialize</em></p>
+                <p>Initializes the object with given metadata to be ready to read data
+        if it's able to reach the file returns true, else returns false.</p>
 
 
                                     <h4>Parameters</h4>
                     <table class="table table-condensed table-hover">
                                                     <tr>
-                                <td>string</td>
-                                <td>$path</td>
-                                <td>
+                                <td>mixed</td>
+                                <td>$metadata</td>
+                                <td><p>array</p>
 </td>
                             </tr>
                                             </table>
                 
                 
                                     <h4>Returns</h4>
-                    string|false
+                    true|false
+                                                </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_file_get_contents" name="method_file_get_contents" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">file_get_contents()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">file_get_contents() : string</pre>
+                <p><em>file_get_contents</em></p>
+                <p>Returns file contents to a string</p>
+
+
+                
+                
+                                    <h4>Returns</h4>
+                    string
                                                 </article>
         </div>
         <aside class="span4 detailsbar">
@@ -615,60 +731,14 @@ Checks and creates Database if not exists</em></p>
             <article class="method">
                 <h3 class="public ">readfile()</h3>
                 <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
-                <pre class="signature" style="margin-right: 54px;">readfile(string <span class="argument">$uuid</span>)</pre>
+                <pre class="signature" style="margin-right: 54px;">readfile()</pre>
                 <p><em>readfile</em></p>
-                <p>Returns decrypted file to be downloaded</p>
+                <p>Returns file contents to be downloaded</p>
 
 
-                                    <h4>Parameters</h4>
-                    <table class="table table-condensed table-hover">
-                                                    <tr>
-                                <td>string</td>
-                                <td>$uuid</td>
-                                <td>
-</td>
-                            </tr>
-                                            </table>
                 
                 
                             </article>
-        </div>
-        <aside class="span4 detailsbar">
-            <h1><i class="icon-arrow-down"></i></h1>
-                                                            <dl>
-                                                                            </dl>
-            <h2>Tags</h2>
-            <table class="table table-condensed">
-                                    <tr><td colspan="2"><em>None found</em></td></tr>
-                            </table>
-        </aside>
-    </div>
-
-                                    <div class="row-fluid">
-        <div class="span8 content class">
-            <a id="method_file_get_contents" name="method_file_get_contents" class="anchor"></a>
-            <article class="method">
-                <h3 class="public ">file_get_contents()</h3>
-                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
-                <pre class="signature" style="margin-right: 54px;">file_get_contents(string <span class="argument">$uuid</span>) : string|false</pre>
-                <p><em>file_get_contents</em></p>
-                <p>Returns file contents to a string</p>
-
-
-                                    <h4>Parameters</h4>
-                    <table class="table table-condensed table-hover">
-                                                    <tr>
-                                <td>string</td>
-                                <td>$uuid</td>
-                                <td><p>File UUID</p>
-</td>
-                            </tr>
-                                            </table>
-                
-                
-                                    <h4>Returns</h4>
-                    string|false
-                                                </article>
         </div>
         <aside class="span4 detailsbar">
             <h1><i class="icon-arrow-down"></i></h1>
@@ -687,17 +757,86 @@ Checks and creates Database if not exists</em></p>
             <article class="method">
                 <h3 class="public ">delete()</h3>
                 <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
-                <pre class="signature" style="margin-right: 54px;">delete(string <span class="argument">$uuid</span>) : true|false</pre>
+                <pre class="signature" style="margin-right: 54px;">delete() : void</pre>
                 <p><em>delete</em></p>
                 <p>Delete file</p>
+
+
+                
+                
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_gen_path" name="method_gen_path" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">gen_path()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">gen_path(string <span class="argument">$hash</span>) : string</pre>
+                <p><em>gen_path</em></p>
+                <p>Returns file location using it's hash</p>
 
 
                                     <h4>Parameters</h4>
                     <table class="table table-condensed table-hover">
                                                     <tr>
                                 <td>string</td>
-                                <td>$uuid</td>
-                                <td><p>File UUID</p>
+                                <td>$hash</td>
+                                <td>
+</td>
+                            </tr>
+                                            </table>
+                
+                
+                                    <h4>Returns</h4>
+                    string
+                                                </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_copy" name="method_copy" class="anchor"></a>
+            <article class="method">
+                <h3 class="protected ">copy()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">copy(string <span class="argument">$origin</span>, string <span class="argument">$destination</span>) : true|false</pre>
+                <p><em>copy</em></p>
+                <p>Copy a file from source to destination</p>
+
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$origin</td>
+                                <td>
+</td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$destination</td>
+                                <td>
 </td>
                             </tr>
                                             </table>
@@ -720,28 +859,19 @@ Checks and creates Database if not exists</em></p>
 
                                     <div class="row-fluid">
         <div class="span8 content class">
-            <a id="method_metadata" name="method_metadata" class="anchor"></a>
+            <a id="method_get_full_path" name="method_get_full_path" class="anchor"></a>
             <article class="method">
-                <h3 class="public ">metadata()</h3>
+                <h3 class="protected ">get_full_path()</h3>
                 <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
-                <pre class="signature" style="margin-right: 54px;">metadata(string <span class="argument">$uuid</span>) : \arrayObject</pre>
-                <p><em>metadata</em></p>
-                <p>Returns file metadata</p>
+                <pre class="signature" style="margin-right: 54px;">get_full_path() : string</pre>
+                <p><em>get_full_path</em></p>
+                <p>Returns file location and name as a string</p>
 
 
-                                    <h4>Parameters</h4>
-                    <table class="table table-condensed table-hover">
-                                                    <tr>
-                                <td>string</td>
-                                <td>$uuid</td>
-                                <td><p>File UUID</p>
-</td>
-                            </tr>
-                                            </table>
                 
                 
                                     <h4>Returns</h4>
-                    \arrayObject
+                    string
                                                 </article>
         </div>
         <aside class="span4 detailsbar">
@@ -755,82 +885,16 @@ Checks and creates Database if not exists</em></p>
         </aside>
     </div>
 
-                                                                    <div class="row-fluid">
-        <div class="span8 content class">
-            <a id="method_newFileHandler" name="method_newFileHandler" class="anchor"></a>
-            <article class="method">
-                <h3 class="private ">newFileHandler()</h3>
-                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
-                <pre class="signature" style="margin-right: 54px;">newFileHandler() : object</pre>
-                <p><em>newFileHandler</em></p>
-                <p>File Handler declaration. You want to override this if coded your own class so it provides correct args.
-returns the correct object using correct class</p>
-
-
-                
-                
-                                    <h4>Returns</h4>
-                    object
-                                                </article>
-        </div>
-        <aside class="span4 detailsbar">
-            <h1><i class="icon-arrow-down"></i></h1>
-                                                            <dl>
-                                                                            </dl>
-            <h2>Tags</h2>
-            <table class="table table-condensed">
-                                    <tr><td colspan="2"><em>None found</em></td></tr>
-                            </table>
-        </aside>
-    </div>
-
-                                    <div class="row-fluid">
-        <div class="span8 content class">
-            <a id="method_getFileHandler" name="method_getFileHandler" class="anchor"></a>
-            <article class="method">
-                <h3 class="private ">getFileHandler()</h3>
-                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
-                <pre class="signature" style="margin-right: 54px;">getFileHandler(string <span class="argument">$uuid</span>) : object</pre>
-                <p><em>getFileHandler</em></p>
-                <p>returns an initialized file handler ready to use</p>
-
-
-                                    <h4>Parameters</h4>
-                    <table class="table table-condensed table-hover">
-                                                    <tr>
-                                <td>string</td>
-                                <td>$uuid</td>
-                                <td>
-</td>
-                            </tr>
-                                            </table>
-                
-                
-                                    <h4>Returns</h4>
-                    object
-                                                </article>
-        </div>
-        <aside class="span4 detailsbar">
-            <h1><i class="icon-arrow-down"></i></h1>
-                                                            <dl>
-                                                                            </dl>
-            <h2>Tags</h2>
-            <table class="table table-condensed">
-                                    <tr><td colspan="2"><em>None found</em></td></tr>
-                            </table>
-        </aside>
-    </div>
-
-                                    </div>
+                                                    </div>
     </section>
 
     <div id="source-view" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="source-view-label" aria-hidden="true">
         <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-            <h3 id="source-view-label">res_storage.php</h3>
+            <h3 id="source-view-label">RS_File.php</h3>
         </div>
         <div class="modal-body">
-            <pre data-src="../files/res_storage.php.txt" class="language-php line-numbers"></pre>
+            <pre data-src="../files/FileManagers/RS_File.php.txt" class="language-php line-numbers"></pre>
         </div>
     </div>
 
@@ -843,6 +907,7 @@ returns the correct object using correct class</p>
                                                         <h1><i class="icon-code"></i></h1>
                             <div>
                                 <ul>
+                                                                            <li><a href="../namespaces/CJCIPackages.html">\CJCIPackages</a></li>
                                                                     </ul>
                             </div>
                         </section>
@@ -870,7 +935,7 @@ returns the correct object using correct class</p>
                 <section class="span10 offset1">
                     <hr />
                     Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and authored
-                    on November 12th, 2013 at 17:42.
+                    on November 13th, 2013 at 12:21.
                 </section>
             </section>
         </section>

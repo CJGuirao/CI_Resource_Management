@@ -1,7 +1,4 @@
 <?php
-if (!defined('BASEPATH'))
-    exit('No direct script access allowed');
-
 /**
  * File Encryption Management Class
  *
@@ -12,7 +9,24 @@ if (!defined('BASEPATH'))
  * @link		http://WillWriteThisSoon.todo
  */
 
-require_once("rs_file.php");
+namespace CJCIPackages\Res_Storage\FileManagers;
+use Exception;
+
+if (!defined('BASEPATH'))
+    exit('No direct script access allowed');
+
+require_once("RS_File.php");
+
+/**
+ * RS_File_Encrypted
+ * File Encryption Management Class
+ *
+ * @package		CJCIPackages
+ * @subpackage	StorageLibrary
+ * @category	CodeIgniter Library
+ * @author		Carlos Jimenez Guirao
+ * @link		http://WillWriteThisSoon.todo
+ */
 
 class RS_File_Encrypted extends RS_File{
 	
