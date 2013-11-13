@@ -10,7 +10,7 @@
  */
 
 namespace CJCIPackages\Res_Storage\FileManagers;
-use Exception;
+use Exception,CJCIPackages\Res_Storage\Res_Storage;
 
 if (!defined('BASEPATH'))
     exit('No direct script access allowed');
