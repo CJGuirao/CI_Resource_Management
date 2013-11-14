@@ -6,9 +6,9 @@ process files w/wo encryption
 
 
 
-###################
+************
 What is CI Resource Management
-###################
+************
 
 This is a library coded to work in CodeIgniter Framework that helps in the
 process of management resources - files - and storing them in your filesystem
@@ -25,9 +25,10 @@ encrypting files in your application. This library is for you.
 Installation
 ************
 
-1.a(If you use composer) Execute: `composer require cjci/res_storage` and fill in 
+1.a (If you use composer) Execute: `composer require cjci/res_storage` and fill in 
 your desired version (dev-master for latest changes).
-1.b(Manually) Download desired version of this project to application/libraries/
+
+1.b (Manually) Download desired version of this project to application/libraries/
 
 2. Create your own res_storage.php config file in application/config
    to configure your path and encryption key. (see Usage for more details)
