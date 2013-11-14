@@ -25,18 +25,35 @@ encrypting files in your application. This library is for you.
 Installation
 ************
 
-1. Download desired version of this project to application/libraries/
+1.a(If you use composer) Execute: `composer require cjci/res_storage` and fill in 
+your desired version (dev-master for latest changes).
+1.b(Manually) Download desired version of this project to application/libraries/
 
 2. Create your own res_storage.php config file in application/config
-   to configure your path and encryption key.
-
+   to configure your path and encryption key. (see Usage for more details)
 
 
 ************
 Usage
 ************
 
-First we need to configure where to store files and a new clear secretkey. 
+*Codeigniters wrapper to loader class* 
+
+This class can be used in anywhere in your code just by its FQNS CJCI/ResStorage/ResStorage
+But, if you want to use `$this->load->('res_storage')` in your code, because you are familiar 
+with CI Loader. Just create a res_storage.php file in your application/libraries folder. 
+Contents as follows:
+```
+<?php
+if (!defined('BASEPATH'))
+    exit('No direct script access allowed');
+
+use CJCI\ResStorage\ResStorage;
+
+class res_storage extends ResStorage{}
+```
+
+Now we need to configure where to store files and a new clear secretkey. 
 (It will be the basis of a 
 new hashed secret key)
 
