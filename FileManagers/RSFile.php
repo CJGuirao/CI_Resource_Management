@@ -2,7 +2,7 @@
 /**
  * Base File Management Class
  *
- * @package		CJCIPackages
+ * @package		CJCI
  * @subpackage	StorageLibrary
  * @category	CodeIgniter Library
  * @author		Carlos Jimenez Guirao
@@ -10,17 +10,17 @@
  * 
  */
 
-namespace CJCIPackages\Res_Storage\FileManagers;
-use Exception, CJCIPackages\Res_Storage\Res_Storage;
-
+namespace CJCI\ResStorage\FileManagers;
+use Exception, CJCI\ResStorage\ResStorage;
+/*
 if (!defined('BASEPATH'))
     exit('No direct script access allowed');
-
+*/
 /**
- * RS_File
+ * RSFile
  * Base File Management Class
  *
- * @package		CJCIPackages
+ * @package		CJCI
  * @subpackage	StorageLibrary
  * @category	CodeIgniter Library
  * @author		Carlos Jimenez Guirao
@@ -28,7 +28,7 @@ if (!defined('BASEPATH'))
  * 
  */
 
-class RS_File {
+class RSFile {
 
 	/**
 	 * File Metadata 
@@ -89,7 +89,7 @@ class RS_File {
 		$this->uuid =  uniqid('', true);
 		$chunks = str_split($this->hash,3);
 		$this->path = $this->gen_path($this->hash);
-		if (!is_readable($this->path)) Res_Storage::create_path($this->path);
+		if (!is_readable($this->path)) ResStorage::create_path($this->path);
 		if (!$this->copy($origin, $this->get_full_path())){
 			throw new Exception('Unable to copy file, aborting.');
 			return false;

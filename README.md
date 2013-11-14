@@ -111,21 +111,21 @@ try-catch:
 Creating your own FileHandle with your own encryption
 ************
 
-Extend and include somewhere in your code RS_File Class if you don't want to use 
+Extend and include somewhere in your code RSFile Class if you don't want to use 
 MCRYPT to store your files encrypted.
-Otherwise extend RS_File_Encrypted and modify it's properties to fit your needs.
+Otherwise extend RSFileEncrypted and modify it's properties to fit your needs.
 
 Add to your config/res_storage.php:
 `$config['file_handler'] = 'My_File_Handler' ;`
 
-Or Extend Res_Storage and override the following to use your FileHandler:
+Or Extend ResStorage and override the following to use your FileHandler:
 
 ```
-use CJCIPackages\Res_Storage\Res_Storage;
-class My_Storage extends Res_Storage {
+use CJCI\ResStorage\ResStorage;
+class My_Storage extends ResStorage {
 	/**
-     * Class to use to handle phisically files. Default RS_File_Encrypted
-	 * use RS_File for non encrypted handling. (or write your own!)Where files will be stored.
+     * Class to use to handle phisically files. Default RSFileEncrypted
+	 * use RSFile for non encrypted handling. (or write your own!)Where files will be stored.
      * FileClass
      * @access public
      * @var string

@@ -1,22 +1,22 @@
 <?php
 /**
- * Res_Storage
+ * ResStorage
  * 
  * Library interfaces that handles metadata and uses a FileHandler to 
  * Physically handle files.
  */
 
-namespace CJCIPackages\Res_Storage ;
+namespace CJCI\ResStorage ;
 use Exception;
-
+/*
 if (!defined('BASEPATH'))
     exit('No direct script access allowed');
-
-require_once("FileManagers/RS_File.php");
-require_once("FileManagers/RS_File_Encrypted.php");
+*/
+require_once("FileManagers/RSFile.php");
+require_once("FileManagers/RSFileEncrypted.php");
 
 /**
- * CJCIPackages
+ * CJCI
  *
  * CodeIgniter Resource storage and management class.
  * It store files, with their metadata.
@@ -55,8 +55,8 @@ require_once("FileManagers/RS_File_Encrypted.php");
  * *Delete File*
  * `$this->res_storage->delete($uuid)`
  * 
- * @package		CJCIPackages
- * @subpackage	Res_Storage
+ * @package		CJCI
+ * @subpackage	ResStorage
  * @author		Carlos Jimenez Guirao
  * @copyright	Copyright (c) 2013, Carlos Jimenez Guirao.
  * @license		GPL V3
@@ -64,7 +64,7 @@ require_once("FileManagers/RS_File_Encrypted.php");
  * @since		Version 1.0
  * @filesource
  */
-class Res_Storage {
+class ResStorage {
 	
 	/**
      * If you use File encryption you MUST change this.
@@ -84,13 +84,13 @@ class Res_Storage {
 	public  $storage_dir  = "/tmp/MustBeOverridenToo/"; 	
 
 	/**
-     * Class to use to handle phisically files. Default RS_File_Encrypted
-	 * use RS_File for non encrypted handling. (or write your own!)Where files will be stored.
+     * Class to use to handle phisically files. Default RSFileEncrypted
+	 * use RSFile for non encrypted handling. (or write your own!)Where files will be stored.
      * file_handler
      * @access public
      * @var string
      */
-	public $file_handler    = "RS_File_Encrypted"; 			
+	public $file_handler    = "RSFileEncrypted"; 			
 	
 	/**
      * Table name where all metadata is stored. 
@@ -116,7 +116,7 @@ class Res_Storage {
 	 * @return void
 	 */
 	public function __construct($args = array()){
-		log_message('debug', "lib Res_Storage Class Initialized");
+		log_message('debug', "lib ResStorage Class Initialized");
         $this->CI =& get_instance();
         $this->checkDatabase();
         if (!empty($args['clearkey'])) $this->clearkey = $args['clearkey'];
@@ -132,7 +132,7 @@ class Res_Storage {
 	 */
 	public function checkDatabase(){
 		if (!$this->CI->db->table_exists($this->table)){
-			log_message('debug', "lib_Res_Storage database doesn't exist.");
+			log_message('debug', "lib_ResStorage database doesn't exist.");
 			$query = $this->CI->db->query(
 					"CREATE TABLE IF NOT EXISTS `".$this->table."` (
 					  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
@@ -147,9 +147,9 @@ class Res_Storage {
 					  `lastaccess` datetime DEFAULT NULL,
 					  PRIMARY KEY (`id`)
 					) ENGINE=InnoDB DEFAULT CHARSET=latin1");
-			if ($query) log_message('debug', "lib_Res_Storage database created sucessfully.");
+			if ($query) log_message('debug', "lib_ResStorage database created sucessfully.");
 			else {
-				throw new Exception('lib_Res_Storage database doesn\'t exist and couldn\'t be created.');
+				throw new Exception('lib_ResStorage database doesn\'t exist and couldn\'t be created.');
 			}
 		}
 	}
@@ -214,7 +214,7 @@ class Res_Storage {
 	 * @return object
 	 */
 	private function newFileHandler(){
-		if (in_array($this->file_handler, array('RS_File','RS_File_Encrypted'))){
+		if (in_array($this->file_handler, array('RSFile','RSFileEncrypted'))){
 			$class = __NAMESPACE__.'\FileManagers\\'.$this->file_handler;
 			return new $class($this->storage_dir, $this->clearkey);	
 		}

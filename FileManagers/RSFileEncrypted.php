@@ -2,33 +2,33 @@
 /**
  * File Encryption Management Class
  *
- * @package		CJCIPackages
+ * @package		CJCI
  * @subpackage	StorageLibrary
  * @category	CodeIgniter Library
  * @author		Carlos Jimenez Guirao
  * @link		http://WillWriteThisSoon.todo
  */
 
-namespace CJCIPackages\Res_Storage\FileManagers;
-use Exception,CJCIPackages\Res_Storage\Res_Storage;
-
+namespace CJCI\ResStorage\FileManagers;
+use Exception,CJCI\ResStorage\ResStorage;
+/*
 if (!defined('BASEPATH'))
     exit('No direct script access allowed');
-
-require_once("RS_File.php");
+*/
+require_once("RSFile.php");
 
 /**
- * RS_File_Encrypted
+ * RSFileEncrypted
  * File Encryption Management Class
  *
- * @package		CJCIPackages
+ * @package		CJCI
  * @subpackage	StorageLibrary
  * @category	CodeIgniter Library
  * @author		Carlos Jimenez Guirao
  * @link		http://WillWriteThisSoon.todo
  */
 
-class RS_File_Encrypted extends RS_File{
+class RSFileEncrypted extends RSFile{
 	
 	/**
      * Hashed provided clearkey.
