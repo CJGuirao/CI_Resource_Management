@@ -2,6 +2,8 @@
     "name": "cjci/res_storage",
     "type": "library",
     "description": "CodeIgniter Resource management library. Store files using Encryption and handle file metadata.",
+    "keywords": ["storage","resources","encryption","file manager"],
+    "homepage": "https://github.com/electropluma/CI_Resource_Management",
     "license": "GPL3",
     "authors": [
         {
