@@ -11,10 +11,10 @@
 
 namespace CJCI\ResStorage\FileManagers;
 use Exception,CJCI\ResStorage\ResStorage;
-/*
+
 if (!defined('BASEPATH'))
     exit('No direct script access allowed');
-*/
+
 require_once("RSFile.php");
 
 /**

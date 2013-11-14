@@ -12,10 +12,10 @@
 
 namespace CJCI\ResStorage\FileManagers;
 use Exception, CJCI\ResStorage\ResStorage;
-/*
+
 if (!defined('BASEPATH'))
     exit('No direct script access allowed');
-*/
+
 /**
  * RSFile
  * Base File Management Class

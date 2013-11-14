@@ -8,10 +8,10 @@
 
 namespace CJCI\ResStorage ;
 use Exception;
-/*
+
 if (!defined('BASEPATH'))
     exit('No direct script access allowed');
-*/
+
 require_once("FileManagers/RSFile.php");
 require_once("FileManagers/RSFileEncrypted.php");
 
